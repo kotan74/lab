@@ -24,7 +24,7 @@
           width: 500,
           height: 300
         };
-        var chart = new google.visualization.PieChart(target);
+        var chart = new google.visualization.LineChart(target);
         data = response.getDataTable();
         chart.draw(data, options);
       }
