@@ -22,9 +22,9 @@
         var options = {
           title: 'My Chart',
           width: 500,
-          height: 300,
+          height: 300
         };
-        var chart = new google.visualization.LineChart(target);
+        var chart = new google.visualization.PieChart(target);
         data = response.getDataTable();
         chart.draw(data, options);
       }
