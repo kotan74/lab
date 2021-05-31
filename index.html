@@ -15,16 +15,17 @@
         var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1RO2MUoky_b-92J3_CmKLbIgoYD-Rb627yrgeJDwoT-Y/edit?usp=sharing');
         query.send(handleQueryResponse);
       }
-
+      //ここでデータを受ける
       function handleQueryResponse(response) {
         var target = document.getElementById('target');
         var data;
         var options = {
           title: 'My Chart',
           width: 500,
-          height: 300
+          height: 300,
+          hAxis:{title:'Year}
         };
-        var chart = new google.visualization.PieChart(target);
+        var chart = new google.visualization.LineChart(target);
         data = response.getDataTable();
         chart.draw(data, options);
       }
