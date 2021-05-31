@@ -34,36 +34,7 @@
       google.charts.setOnLoadCallback(drawChart);
     })();
   </script>
-  <br/>
-  <div id="target"></div>
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
-  <script>
-    (function() {
-      'use strict';
-
-      //グラフ
-      function drawChart() {
-        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1RO2MUoky_b-92J3_CmKLbIgoYD-Rb627yrgeJDwoT-Y/edit?usp=sharing');
-        query.send(handleQueryResponse);
-      }
-      //ここでhandleQueryResponseのデータをresponseとして受ける
-      function handleQueryResponse(response) {
-        var target = document.getElementById('target1');
-        var data;
-        var options = {
-          title: 'EPS Charts',
-          width: 700,
-          height: 400
-        };
-        var chart = new google.visualization.LineChart(target);
-        data = response.getDataTable();
-        chart.draw(data, options);
-      }
-
-      google.charts.load('current', {packages: ['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-    })();
-  </script>
+  
   
 </body>
 </html>
