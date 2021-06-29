@@ -17,53 +17,23 @@
   </head>
   <body>
     <header>
-      <div class="alert alert-info text-center mb-0 rounded-0 alert-dismissible fade show">
-        News! News! News! News!
-        <button class="close" data-dismiss="alert">
-          &times;
-        </button>
-      </div>
-      <div class="container">
-      <div class="mt-5 navbar-brand text-center">PER & EPS グラフ</div>
+      <div id="header" class="fixed-top" style="height:50px; background-color:#483D8B; text-align: center;">
+      <h2 class="text-white">世界・日本の経済指標</h2>    
       </div>
       
-<!--       <div class="cover text-white text-center py-5">
-        <h1 class="display-4 mb-4">DotUninstall App</h1>
-        <a href="" class="btn btn-primary btm-lg">Get it Now!</a>
-      </div> -->
+      <div class="mt-5 "></div>
+
+      <p class="lead text-center">定点観測している指標まとめ</p>
+    
+      
+
       
     </header>
   
 <body>
   <div id="target"></div>
-<!--   <script src="https://www.gstatic.com/charts/loader.js"></script>
-  <script>
-    (function() {
-      'use strict';
 
-      //グラフ
-      function drawChart() {
-        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1RO2MUoky_b-92J3_CmKLbIgoYD-Rb627yrgeJDwoT-Y/edit?usp=sharing');
-        query.send(handleQueryResponse);
-      }
-      //ここでhandleQueryResponseのデータをresponseとして受ける
-      function handleQueryResponse(response) {
-        var target = document.getElementById('target');
-        var data;
-        var options = {
-          title: 'EPS Charts',
-          width: 700,
-          height: 400
-        };
-        var chart = new google.visualization.LineChart(target);
-        data = response.getDataTable();
-        chart.draw(data, options);
-      }
 
-      google.charts.load('current', {packages: ['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-    })();
-  </script> -->
 <div class="text-center">
   <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRsrqdZcGafZWPzBJiJ7_t_ETXVC4RNejf2jeh2kRlFkv0ubHHFzWXU3hQD6HibGac2bE6cCTLduA5C/pubchart?oid=677865500&amp;format=interactive"></iframe>
 <div class="text-center">
